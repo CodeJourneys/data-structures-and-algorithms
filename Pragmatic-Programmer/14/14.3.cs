@@ -1,0 +1,1 @@
+// Add a method to singly LinkedList that returns the last element from the list
