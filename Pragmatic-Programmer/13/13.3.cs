@@ -33,7 +33,10 @@ int findGreatestNumber_ExponentialTime(int[] arr)
 int findGreatestNumber_LogTime(int[] arr)
 {
     // sort array
-    // return largest number (final item in array)
+    // return largest number
+    
+    Array.Sort(arr);
+    return arr[arr.Length-1];
 }
 
 // O(N)
