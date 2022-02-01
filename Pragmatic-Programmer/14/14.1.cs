@@ -16,7 +16,7 @@ void PrintValues()
 {
     ListNode node = self.firstNode;
 
-    while(node.next != null)
+    while(node != null)
     {
         Console.WriteLine(node.val);
         node = node.next;

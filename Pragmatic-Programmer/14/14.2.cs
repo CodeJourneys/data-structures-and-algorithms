@@ -18,8 +18,8 @@
  void PrintValuesInReverse()
  {
      ListNode node = self.lastNode;
-     
-     while(node.prev != null)
+
+     while(node != null)
      {
          Console.WriteLine(node.val);
          node = node.prev;
