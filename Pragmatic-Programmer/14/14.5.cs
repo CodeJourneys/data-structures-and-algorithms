@@ -14,14 +14,10 @@
 
 void DeleteNode(ListNode nodeToRemove)
 {
-    ListNode current = nodeToRemove;
-    ListNode next;
+    ListNode nodeToDisposeOf = nodeToRemove.next;
 
-    while(next.next != null)
-    {
-        current.val = next.val;
-        current = next;
-    }
+    nodeToRemove.val = nodeToRemove.next.val;
+    nodeToRemove.next = nodeToRemove.next.next;
 
-    // Deallocate/Dispose of next - handled by GC in C#
+    // Deallocate/Dispose of next/nodeToDisposeOf - handled by GC in C#
 }
